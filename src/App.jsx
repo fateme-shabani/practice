@@ -4,8 +4,10 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Product from './components/Product'
 import Cost from './components/Cost'
+import Counter from './components/Counter'
 
 function App() {
+
   const [count, setCount] = useState(0)
   // const products=[
   //   {type:'laptop asus',price:180000},
@@ -28,6 +30,7 @@ function App() {
       return <Cost key={item.id} data={item} />
     })}
 
+    <Counter />
 
     </div>
    )
