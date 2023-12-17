@@ -1,26 +1,22 @@
 import React, { useState } from "react";
 
 const Counter = ({ data }) => {
-  // const {data}=props
-  // console.log(data)
-  const [myPrice, setMyPrice] = useState(0);
+
+  const [number, setNumber] = useState(0);  
 
   const decClickHandler = () => {
-    if (myPrice > 0)
-      // alert('click shod!!!!')
-      setMyPrice(myPrice - 1);
+    if (number > 0)
+    setNumber
+  (number - 1);
   };
 
   const incClickHandler = () => {
-    // alert('click shod!!!!')
-    setMyPrice(myPrice + 1);
+    setNumber(number + 1);
   };
   return (
-    <div>
-      {/* <h2>{data.type}</h2>
-        <h3>{data.price}</h3> */}
+    <div className="counter">
       <button onClick={decClickHandler}>-</button>
-      <label>{myPrice}</label>
+      <label>{number}</label>
       <button onClick={incClickHandler}>+</button>
     </div>
   );
