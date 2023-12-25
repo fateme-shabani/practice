@@ -17,8 +17,8 @@ function App() {
   // ]
   const costs = [
     { id: 1, type: "laptop", price: 1800 },
-    { id: 2, type: "mobile", price: 800 },
-    { id: 3, type: "airPods", price: 200 },
+    // { id: 2, type: "mobile", price: 800 },
+    // { id: 3, type: "airPods", price: 200 },
   ];
 
   return (
@@ -28,7 +28,6 @@ function App() {
       {/* {products.map((item,index)=>{
       return <Product key={index} product={item}/>
     })} */}
-
       {costs.map((item) => {
         return <Cost key={item.id} data={item} />;
       })}
