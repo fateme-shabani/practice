@@ -24,7 +24,7 @@ function App() {
   return (
     <div>
       <Form />
-      <Counter />
+      {/* <Counter /> */}
       {/* {products.map((item,index)=>{
       return <Product key={index} product={item}/>
     })} */}
